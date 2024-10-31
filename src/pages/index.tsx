@@ -31,6 +31,7 @@ const Home: React.FC = () => {
       <div className="flex justify-center items-center h-screen">
         <CubismComponent />
         <AzureSttComponent />
+
         {/* <div className="flex justify-center items-center -mt-24">
           <img
             src="/images/fikri_character.png"

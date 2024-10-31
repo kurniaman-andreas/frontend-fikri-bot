@@ -1,6 +1,8 @@
 // src/components/AzureSttComponent.tsx
 import React, { useEffect } from "react";
-import { SpeechSDK } from "microsoft-cognitiveservices-speech-sdk";
+// import { SpeechSDK } from "microsoft-cognitiveservices-speech-sdk";
+// import { MicrophoneIcon } from "@heroicons/react/24/outline";
+import * as SpeechSDK from "microsoft-cognitiveservices-speech-sdk";
 // import * as SpeechSDK from "microsoft-cognitiveservices-speech-sdk";
 
 const AzureSttComponent: React.FC = () => {
@@ -95,11 +97,43 @@ const AzureSttComponent: React.FC = () => {
       {/* <div
         id="chat-box"
         className="w-full max-w-xl h-32 overflow-y-auto p-2"
-      ></div>
-      <div className="flex items-center justify-center fixed bottom-[40px]">
+      ></div> */}
+      {/* <div className="flex items-center justify-center fixed bottom-[40px]">
         <a href="#" id="mic-btn">
           <img src="/images/mic.png" alt="Microphone" />
         </a>
+      </div> */}
+
+      <div className="bg-white w-60 h-12 rounded-3xl flex items-center shadow-inner shadow-[#000000] justify-center fixed bottom-[80px] left-1/2 -translate-x-1/2 pointer-events-auto">
+        <div className="absolute inset-y-0 left-1/2 w-0.5 bg-[#555166]"></div>
+
+        <div className="flex-1 text-center flex justify-center">
+          <a href="#" id="mic-btn">
+            <img
+              src="/images/microphone.png"
+              alt="Microphone"
+              className="w-8"
+            />
+          </a>
+        </div>
+
+        <div className="flex-1 text-center flex justify-center">
+          <img src="/images/keyboard.png" alt="Microphone" className="h-8" />
+        </div>
+      </div>
+      {/* <div className="bg-white w-60 h-12 rounded-3xl flex items-center shadow-inner shadow-[#000000] justify-center fixed bottom-[40px] left-1/2 transform -translate-x-1/2">
+        <div className="absolute inset-y-0 left-1/2 w-0.5 bg-[#555166]"></div>
+
+        <div className="flex-1 text-center">
+          <button
+            id="mic-btn"
+            className="w-full h-full flex items-center justify-center"
+          >
+            <img src="/images/mic.png" alt="Microphone" />
+          </button>
+        </div>
+
+        <div className="flex-1 text-center"></div>
       </div> */}
     </div>
   );

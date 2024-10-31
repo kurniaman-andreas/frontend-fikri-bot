@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { MicrophoneIcon } from "@heroicons/react/24/outline";
+
 import { PiKeyboardLight } from "react-icons/pi";
+
 // import { KeyboardIcon } from "@heroicons/react/24/solid";
 
 const CubismComponent: React.FC = () => {
@@ -41,25 +42,16 @@ const CubismComponent: React.FC = () => {
         />
       </div>
 
-      <div className="w-full min-h-80 bg-[#1A0C44] fixed bottom-0 flex flex-col items-center">
-        <div className="text-center text-3xl text-white font-medium">
-          <div className="mt-[55px]">Halo!</div>
-          <div
-            id="chat-box"
-            className="w-full max-w-xl h-32 overflow-y-auto p-2"
-          ></div>
+      <div className="w-full min-h-80 bg-[#1A0C44] fixed bottom-0 flex flex-col items-center  overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-3  bg-gradient-to-r from-[#7C59FB] to-[#FEF8FF]">
+          <div className="text-center text-3xl text-white font-medium">
+            <div className="mt-[55px]">Halo!</div>
+            <div
+              id="chat-box"
+              className="w-full max-w-xl h-32 overflow-y-auto p-2"
+            ></div>
+          </div>
         </div>
-
-        {/* <div className="bg-white w-60 h-12 rounded-3xl flex items-center shadow-inner shadow-[#000000] relative">
-          
-          <div className="absolute inset-y-0 left-1/2 w-0.5 bg-[#555166]"></div>
-
-         
-          <div className="flex-1 text-center">Konten Kiri</div>
-
-        
-          <div className="flex-1 text-center">Konten Kanan</div>
-        </div> */}
       </div>
     </div>
   );

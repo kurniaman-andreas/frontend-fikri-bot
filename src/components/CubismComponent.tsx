@@ -27,28 +27,32 @@ const CubismComponent: React.FC = () => {
   return (
     <div
       style={{
-        backgroundImage: "url(/images/background.png)",
+        backgroundImage: "",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       className="h-screen flex justify-center items-center kanit-regular"
     >
-      <div className="flex justify-center items-center -mt-24">
+      <div className="flex justify-center items-center -mt-50">
         <img
           src="/images/fikri_character.png"
           alt="fikri_character"
-          className="h-[355px]"
+          className="h-[600px]"
         />
       </div>
 
-      <div className="w-full min-h-80 bg-[#1A0C44] fixed bottom-0 flex flex-col items-center  overflow-hidden">
+      <div className="w-[100%] min-h-80 bg-[#1A0C44] fixed bottom-0 flex flex-col items-center  overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-3  bg-gradient-to-r from-[#7C59FB] to-[#FEF8FF]">
-          <div className="text-center text-3xl text-white font-medium">
-            <div className="mt-[55px]">Halo!</div>
+          <img
+              src="fikri_icon.svg"
+              alt="Deskripsi gambar"
+              className="mx-auto mt-5 w-16 h-16"/>
+          <div className="flex flex-col text-center text-3xl text-white font-medium">
+            <div className="mt-[20px]">Halo!</div>
             <div
               id="chat-box"
-              className="w-full max-w-xl h-32 overflow-y-auto p-2"
+              className="w-full max-w-xl h-32 overflow-y-auto p-2 m-auto"
             ></div>
           </div>
         </div>

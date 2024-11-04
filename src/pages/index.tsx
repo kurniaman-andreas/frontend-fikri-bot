@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <nav className="fixed w-[52px] h-[52px] bg-white rounded-full flex items-center justify-center z-20 top-[10px] start-[20px]">
+      {/* <nav className="fixed w-[52px] h-[52px] bg-white rounded-full flex items-center justify-center z-20 top-[10px] start-[20px]">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
-                xmlns="menu.svg"
+                xmlns="translate.svg"
                 fill="none"
                 viewBox="0 0 17 14"
               >
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       <div className="flex justify-center items-center h-screen w-full">
         <CubismComponent />

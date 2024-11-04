@@ -104,17 +104,29 @@ const AzureSttComponent: React.FC = () => {
         </a>
       </div> */}
       
-
- 
-      <div className="bg-white w-[220px] h-12 rounded-3xl flex items-center justify-center fixed left-1/2 top-[500px] -translate-x-1/2 pointer-events-auto text-black text-[20px] font-plus-jakarta-sans border-2" style={{ borderColor: '#E92E31' }}>
-        <img src="danger.svg" alt="Icon" className="w-6 h-6 mr-2" />
-        Tombol Darurat
+      <div className="bg-white w-[70px] h-[70px] rounded-full drop-shadow-lg flex items-center justify-center fixed left-[60px] top-[15px] -translate-x-1/2 pointer-events-auto text-black text-[20px] font-plus-jakarta-sans border-2">
+        <img src="translate.svg" alt="Icon" className="w-[45px] h-[45px]" />
       </div>
-      <div className="bg-[#7C59FB] w-24 h-24 rounded-full flex items-center justify-center fixed bottom-[25px] left-1/2 -translate-x-1/2 pointer-events-auto">
+ 
+      <div className="bg-white w-[220px] h-12 rounded-3xl flex items-center justify-center fixed left-1/2 top-[500px] -translate-x-1/2 pointer-events-auto text-black text-[20px] font-plus-jakarta-sans border-2" style={{ borderColor: '#9741FF' }}>
+        <img src="Message.svg" alt="Icon" className="w-6 h-6 mr-2" />
+        Kotak Layanan
+      </div>
+      <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center fixed bottom-[25px] left-1/2 -translate-x-1/2 pointer-events-auto">
         <div className="flex justify-center items-center m-auto">
           <a href="#" id="mic-btn">
             <img
-              src="/images/microphone.png"
+              src="mic.svg"
+              alt="Microphone"
+              className="w-10 h-10"
+            />
+          </a>
+        </div>
+        <div className="w-24 h-24 flex items-center justify-center fixed bottom left-[150px] -translate-x-1/2 pointer-events-auto">
+        <div className="flex justify-center items-center m-auto">
+          <a href="#" id="mic-btn">
+            <img
+              src="keyboard.svg"
               alt="Microphone"
               className="w-10 h-10"
             />
